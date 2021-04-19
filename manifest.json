@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "remove-twitter-message-box",
+  "version": "1.0",
+  "description": "Remove the tiresome box",
+  "icons": {
+    "128": "icons/icon-128.png",
+    "64": "icons/icon-64.png",
+    "48": "icons/icon-48.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://twitter.com/*"],
+    "js": [
+      "content/removebox.js"
+    ]
+  }]
+}
